@@ -11,7 +11,7 @@ O **Sistema de Classificação de Dados com RBAC (Role-Based Access Control)** f
 - Avaliação de risco
 - Controle de acesso baseado em papéis
 - Auditoria de acessos
-- Geração de relatorios
+- Geração de relatórios
 
 O projeto demonstra conceitos fundamentais de Segurança da Informação aplicados de forma prática.
 
@@ -33,42 +33,42 @@ Implementar um sistema capaz de:
 
 O sistema é composto por:
 
-- `main.py` → Script principal de execução
-- `data/` → Diretório contendo os arquivos simulados
+- `main.py` → Script principal de execução  
+- `data/` → Diretório contendo os arquivos simulados  
 - `reports/` → Diretório onde são gerados:
   - `audit.log`
   - `relatorio_risco.txt`
 
-Fluxo de funcionamento:
+### 🔁 Fluxo de funcionamento
 
-1. Usuário executa o sistema
-2. Papel (role) é identificado
-3. Documentos são classificados
-4. Risco é avaliado
-5. RBAC verifica permissão
-6. Evento é registrado no log
-7. Relatório é gerado
+1. Usuário executa o sistema  
+2. Papel (role) é identificado  
+3. Documentos são classificados  
+4. Risco é avaliado  
+5. RBAC verifica permissões  
+6. Evento é registrado no log  
+7. Relatório é gerado  
 
 ---
 
 ## 👥 4. Controle de Acesso (RBAC)
 
-O sistema utiliza três papéis:
+O sistema utiliza três papéis distintos:
 
 ### 🔹 Diretor
-- Acesso total aos documentos
-- Visualiza todas as classificações
-- Pode gerar relatórios completos
+- Acesso total aos documentos  
+- Visualiza todas as classificações  
+- Pode gerar relatórios completos  
 
 ### 🔹 Analista
-- Acesso parcial
-- Pode consultar determinados arquivos
-- Tentativas indevidas são registradas
+- Acesso parcial  
+- Pode consultar determinados arquivos  
+- Tentativas indevidas são registradas em log  
 
 ### 🔹 Estagiário
-- Acesso restrito
-- A maioria das tentativas é negada
-- Eventos registrados em log
+- Acesso altamente restrito  
+- A maioria das tentativas é negada  
+- Eventos registrados para auditoria  
 
 ---
 
@@ -76,12 +76,12 @@ O sistema utiliza três papéis:
 
 Os documentos são classificados em níveis como:
 
-- Público
-- Interno
-- Confidencial
-- Restrito
+- Público  
+- Interno  
+- Confidencial  
+- Restrito  
 
-A classificação impacta diretamente no nível de risco atribuído e nas permissões de acesso.
+A classificação impacta diretamente o nível de risco atribuído e as permissões de acesso aplicadas pelo RBAC.
 
 ---
 
@@ -89,28 +89,28 @@ A classificação impacta diretamente no nível de risco atribuído e nas permis
 
 O sistema atribui níveis de risco com base na sensibilidade da informação.
 
-Exemplo:
-- Documento Restrito → Alto Risco
-- Documento Público → Baixo Risco
+### Exemplo:
+- Documento Restrito → Alto Risco  
+- Documento Público → Baixo Risco  
 
-O relatório consolidado permite análise de exposição de dados.
+O relatório consolidado permite análise da exposição de dados e apoio à tomada de decisão.
 
 ---
 
 ## 📝 7. Auditoria
 
-Todos os eventos são registrados em:
+Todos os eventos são registrados no arquivo:
 
-reports/audit.log
-
+`reports/audit.log`
 
 O log inclui:
-- Data e hora
-- Papel do usuário
-- Documento acessado
-- Status (Permitido / Negado)
+- Data e hora  
+- Papel do usuário  
+- Documento acessado  
+- Status (Permitido / Negado)  
 
 Isso garante:
+
 ✔ Rastreabilidade  
 ✔ Monitoramento  
 ✔ Conformidade  
@@ -121,15 +121,14 @@ Isso garante:
 
 Gerado automaticamente em:
 
-reports/relatorio_risco.txt
-
+`reports/relatorio_risco.txt`
 
 Contém:
-- Lista de documentos
-- Classificação
-- Nível de risco
+- Lista de documentos  
+- Classificação atribuída  
+- Nível de risco  
 
-Pode ser utilizado como base para auditorias internas.
+Pode ser utilizado como base para auditorias internas e processos de compliance.
 
 ---
 
@@ -145,11 +144,11 @@ Pode ser utilizado como base para auditorias internas.
 
 ## 🚀 10. Possíveis Melhorias Futuras
 
-- Implementação de autenticação real
-- Integração com banco de dados
-- Interface web
-- Criptografia de arquivos sensíveis
-- Exportação de relatórios em PDF
+- Implementação de autenticação real  
+- Integração com banco de dados  
+- Interface web para visualização  
+- Criptografia de arquivos sensíveis  
+- Exportação de relatórios em PDF  
 
 ---
 
@@ -157,9 +156,9 @@ Pode ser utilizado como base para auditorias internas.
 
 O projeto demonstra de forma prática a aplicação de conceitos de:
 
-- Governança de Dados
-- Segurança da Informação
-- Controle de Acesso
-- Auditoria e Compliance
+- Governança de Dados  
+- Segurança da Informação  
+- Controle de Acesso  
+- Auditoria e Compliance  
 
-Servindo como base para evolução em arquiteturas mais robustas.
+Servindo como base para evolução **para arquiteturas mais robustas e ambientes corporativos reais**.
