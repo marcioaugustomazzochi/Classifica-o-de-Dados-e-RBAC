@@ -11,7 +11,7 @@ O **Sistema de Classificação de Dados com RBAC (Role-Based Access Control)** f
 - Avaliação de risco
 - Controle de acesso baseado em papéis
 - Auditoria de acessos
-- Geração de relatorios
+- Geração de relatórios
 
 O projeto demonstra conceitos fundamentais de Segurança da Informação aplicados de forma prática.
 
