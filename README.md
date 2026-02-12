@@ -4,7 +4,7 @@
 ![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-# 📂 Sistema Classificacao dados-rbac
+# 📂 Sistema Classificacao Dados RBAC
 > Governança de dados e segurança da informação aplicada em Python.
 
 Este projeto implementa um modelo simples de governança de dados em Python, rodando em ambiente Linux. Ele combina **classificação de documentos**, **avaliação de risco**, **controle de acesso baseado em papéis (RBAC)** e **auditoria de acessos**.
@@ -39,7 +39,7 @@ Cada documento recebe uma classificação de risco:
 ## 📂 Estrutura do Projeto
 
 ```bash
-classificador-dados-seguros/
+sistema-classificacao-dados-rbac/
 ├── main.py
 ├── classification.py
 ├── rbac.py
